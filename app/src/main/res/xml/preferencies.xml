@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_titol_dades_personals">
+
+        <EditTextPreference
+            android:autoText="true"
+            android:defaultValue="Default value"
+            android:key="email"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_sum_email"
+            android:title="@string/pref_email" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_titol_altres_dades">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors"
+            android:key="color_de_fons"
+            android:summary="Cap"
+            android:title="@string/pref_backgroung_color" />
+        <CheckBoxPreference
+            android:id="@+id/aplicar_background"
+            android:defaultValue="false"
+            android:key="aplicar_background"
+            android:summary="No"
+            android:title="Aplicar Background" />
+    </PreferenceCategory>
+</PreferenceScreen>
